@@ -1,27 +1,26 @@
 package com.maple.ch1.javaconfig;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class JavaConfig {
     @Bean
-    public FunctionServices functionServices() {
-        return new FunctionServices();
+    public FunctionService functionServices() {
+        return new FunctionService();
     }
 
     @Bean
-    public UseFunctionServices useFunctionServices() {
-        UseFunctionServices useFunctionServices = new UseFunctionServices();
-        useFunctionServices.setFunctionServices(functionServices());
-        return useFunctionServices;
+    public UseFunctionService useFunctionServices() {
+        UseFunctionService useFunctionService = new UseFunctionService();
+        useFunctionService.setFunctionService(functionServices());
+        return useFunctionService;
     }
 
     @Bean
-    public UseFunctionServices useFunctionServices(FunctionServices functionServices) {
-        UseFunctionServices useFunctionServices = new UseFunctionServices();
-        useFunctionServices.setFunctionServices(functionServices);
-        return useFunctionServices;
+    public UseFunctionService useFunctionServices(FunctionService functionService) {
+        UseFunctionService useFunctionService = new UseFunctionService();
+        useFunctionService.setFunctionService(functionService);
+        return useFunctionService;
     }
 }

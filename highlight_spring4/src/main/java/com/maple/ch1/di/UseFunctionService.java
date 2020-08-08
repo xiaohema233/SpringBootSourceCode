@@ -7,11 +7,11 @@ import org.springframework.stereotype.Service;
  * @author zh900
  */
 @Service
-public class UseFunctionServices {
+public class UseFunctionService {
     @Autowired
-    FunctionServices functionServices;
+    FunctionService functionService;
 
     public String SayHello(String word) {
-        return functionServices.sayHello(word);
+        return functionService.sayHello(word);
     }
 }

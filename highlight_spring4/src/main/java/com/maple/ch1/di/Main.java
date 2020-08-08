@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DiConfig.class);
 
-        UseFunctionServices useFunctionServices = context.getBean(UseFunctionServices.class);
+        UseFunctionService useFunctionService = context.getBean(UseFunctionService.class);
 
-        System.out.println(useFunctionServices.SayHello("di"));
+        System.out.println(useFunctionService.SayHello("di"));
 
         context.close();
     }
