@@ -7,11 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="highlight_springmvc4" />
-        <module name="highlight_spring4" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="highlight_spring4" target="1.8" />
       <module name="highlight_springmvc4" target="1.7" />
     </bytecodeTargetLevel>
   </component>
