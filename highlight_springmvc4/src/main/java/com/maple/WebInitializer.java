@@ -24,6 +24,6 @@ public class WebInitializer implements WebApplicationInitializer {
         Dynamic servelt = servletContext.addServlet("dispatcher", new DispatcherServlet(context));
         servelt.addMapping("/");
         servelt.setLoadOnStartup(1);
-
+        servelt.setAsyncSupported(true);
     }
 }
