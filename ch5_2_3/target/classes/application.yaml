@@ -1,0 +1,10 @@
+server:
+  port: 9999
+  contextPath: /helloboot
+
+book:
+  author: xiaohema
+  name: dididididi
+
+logging:
+  file: E:/mylog/log.log
